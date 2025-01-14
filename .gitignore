@@ -2,3 +2,5 @@ data/
 test
 train
 validation
+*.model
+*.pickle
