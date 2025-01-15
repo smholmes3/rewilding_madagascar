@@ -4,3 +4,4 @@ train
 validation
 *.model
 *.pickle
+wandb
