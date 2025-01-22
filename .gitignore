@@ -5,5 +5,4 @@ validation
 *.model
 *.pickle
 wandb
-.csv
-.ckpt
+*.ckpt
