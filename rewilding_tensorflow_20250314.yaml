@@ -1,0 +1,27 @@
+name: rewilding_tensorflow
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - tensorflow=2.15.0
+  - cudnn=8.9.7.29
+  - numpy=1.26.4
+  - scipy=1.15.1
+  - pandas=2.2.3
+  - h5py=3.12.1
+  - grpcio=1.59.3
+  - keras=2.15.0
+  - pip
+  - pip:
+      - tensorflow-hub==0.16.1
+      - tensorflow-estimator==2.15.0
+      - torch==2.5.1
+      - torchvision==0.20.1
+      - torchaudio==2.5.1
+      - scikit-learn==1.6.1
+      - jupyterlab==4.3.4
+      - matplotlib==3.10.0
+      - librosa==0.10.2.post1
+      - tqdm==4.67.1
