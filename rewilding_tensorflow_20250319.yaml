@@ -314,4 +314,4 @@ dependencies:
       - webencodings==0.5.1
       - websocket-client==1.8.0
       - widgetsnbextension==4.0.13
-prefix: /home/Sheila/miniconda3/envs/rewilding_tensorflow
+prefix: /home/Sheila/miniconda3/envs/rewilding_tensorflow_WSL
