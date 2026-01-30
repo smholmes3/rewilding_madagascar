@@ -1,0 +1,33 @@
+name: rewilding_perch_min
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+
+  # Core numerics / IO (keep lightly pinned)
+  - numpy<2
+  - scipy
+  - pandas
+  - h5py
+  - pyyaml
+  - tqdm
+
+  # Audio stack
+  - soundfile
+  - librosa
+
+  # Handy for testing inside container
+  - ipython
+
+  # Install the version-sensitive stuff via pip
+  - pip:
+      # OpenSoundscape pinned as requested
+      - opensoundscape==0.11.0
+      - bioacoustics-model-zoo==0.11.0
+
+      # TensorFlow stack (pip wheels; avoids conda solver fights)
+      - tensorflow==2.15.*
+      - keras==2.15.*
+      - tensorflow-hub==0.16.*
+      - tf-keras==2.15.*
