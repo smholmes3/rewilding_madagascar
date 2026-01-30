@@ -14,7 +14,8 @@ dependencies:
   - tqdm
 
   # Audio stack
-  - soundfile
+  - libsndfile 
+  - pysoundfile
   - librosa
 
   # Handy for testing inside container
@@ -23,8 +24,8 @@ dependencies:
   # Install the version-sensitive stuff via pip
   - pip:
       # OpenSoundscape pinned as requested
-      - opensoundscape==0.11.0
-      - bioacoustics-model-zoo==0.11.0
+      - opensoundscape==0.11.2
+      - bioacoustics-model-zoo==0.12.2
 
       # TensorFlow stack (pip wheels; avoids conda solver fights)
       - tensorflow==2.15.*
