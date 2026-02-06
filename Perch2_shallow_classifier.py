@@ -86,7 +86,7 @@ test_labels = test_annotations_corrected.clip_labels(
 perch2_model = bmz.Perch2()
 
 #add a 2-layer PyTorch classification head on top of the pre-trained Perch2 model
-perch2_model.initialize_custom_classifier(classes=class_list, hidden_layer_sizes=(100,))
+perch2_model.initialize_custom_classifier(classes=class_list, hidden_layer_sizes=())
 
 #embed the training/validation samples with 5 augmented variations each, 
 #then fit the classification head
@@ -97,6 +97,10 @@ perch2_model.train(
   embedding_batch_size=64, 
   embedding_num_workers=4  
 )
+#Save model as a lightweight option that is easier to reload in different environments
+import torch
+torch.save(perch2_model.network.state_dict())
+
 # save the custom Perch2 model to a file
 save_path.parent.mkdir(parents=True, exist_ok=True)
 perch2_model.save(save_path)
@@ -164,7 +168,7 @@ def evaluate_on_val(
     plt.rcParams["figure.figsize"] = [15, 5]
 
     for species in class_list:
-        pred_col = species + "pred"
+        pred_col = species
 
         # Some safety: skip if prediction column isn't present
         if pred_col not in scores_valid_df.columns:
