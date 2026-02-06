@@ -78,6 +78,10 @@ test_labels = test_annotations_corrected.clip_labels(
 
 # Now you have your labels for training, validation, and testing
 
+# -----------------
+# Model training
+# -----------------
+
 #Load the pre-trained Perch2 tensorflow model
 perch2_model = bmz.Perch2()
 
