@@ -86,7 +86,7 @@ test_labels = test_annotations_corrected.clip_labels(
 perch2_model = bmz.Perch2()
 
 #add a 2-layer PyTorch classification head on top of the pre-trained Perch2 model
-perch2_model.initialize_custom_classifier(classes=class_list, hidden_layer_sizes=())
+perch2_model.initialize_custom_classifier(class_list, hidden_layer_sizes=())
 
 #embed the training/validation samples with 5 augmented variations each, 
 #then fit the classification head
