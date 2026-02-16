@@ -1,0 +1,64 @@
+2026-02-09 15:23:17.697419: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-02-09 15:23:19.210070: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-02-09 15:23:24.700541: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+/usr/local/lib/python3.13/site-packages/tensorflow_hub/__init__.py:61: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1770647237.836407  322623 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 43681 MB memory:  -> device: 0, name: NVIDIA A40, pci bus id: 0000:17:00.0, compute capability: 8.6
+/usr/local/lib/python3.13/site-packages/opensoundscape/ml/cnn.py:599: UserWarning: 
+                    This architecture is not listed in opensoundscape.ml.cnn_architectures.ARCH_DICT.
+                    It will not be available for loading after saving the model with .save() (unless using pickle=True). 
+                    To make it re-loadable, define a function that generates the architecture from arguments: (n_classes, n_channels) 
+                    then use opensoundscape.ml.cnn_architectures.register_architecture() to register the generating function.
+
+                    The function can also set the returned object's .constructor_name to the registered string key in ARCH_DICT
+                    to avoid this warning and ensure it is reloaded correctly by opensoundscape.ml.load_model().
+
+                    See opensoundscape.ml.cnn_architectures module for examples of constructor functions
+                    
+  warnings.warn(
+/usr/local/lib/python3.13/site-packages/opensoundscape/ml/cnn.py:623: UserWarning: Failed to detect expected # input channels of this architecture.Make sure your architecture expects the number of channels equal to `channels` argument 1). Pytorch architectures generally expect 3 channels by default.
+  warnings.warn(
+  0%|          | 0/5 [00:00<?, ?it/s]/usr/local/lib/python3.13/multiprocessing/popen_fork.py:67: DeprecationWarning: This process (pid=322623) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+2026-02-09 15:27:24.599607: I external/local_xla/xla/service/service.cc:163] XLA service 0x150a0806dc20 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2026-02-09 15:27:24.599637: I external/local_xla/xla/service/service.cc:171]   StreamExecutor device (0): NVIDIA A40, Compute Capability 8.6
+2026-02-09 15:27:25.080819: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2026-02-09 15:27:25.231275: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:473] Loaded cuDNN version 91002
+2026-02-09 15:27:25.398174: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-02-09 15:27:25.398242: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-02-09 15:27:25.398265: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-02-09 15:27:25.459522: W external/local_xla/xla/service/gpu/llvm_gpu_backend/default/nvptx_libdevice_path.cc:41] Can't find libdevice directory ${CUDA_DIR}/nvvm/libdevice. This may result in compilation or runtime failures, if the program we try to run uses routines from libdevice.
+Searched for CUDA in the following directories:
+  ./cuda_sdk_lib
+  Perch2_shallow_classifier.py.runfiles/cuda_nvcc
+  Perch2_shallow_classifier.py.runfiles/cuda_nvdisasm
+  Perch2_shallow_classifier.py.runfiles/nvidia_nvshmem
+  Perch2_/cuda_nvcc
+  Perch2_/cuda_nvdisasm
+  Perch2_/nvidia_nvshmem
+  
+  /usr/local/cuda
+  /opt/cuda
+  /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../nvidia/cuda_nvcc
+  /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../nvidia/cuda_nvcc
+  /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../cuda
+  /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../..
+  /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../..
+  .
+You can choose the search directory by setting xla_gpu_cuda_data_dir in HloModule's DebugOptions.  For most apps, setting the environment variable XLA_FLAGS=--xla_gpu_cuda_data_dir=/path/to/cuda will work.
+2026-02-09 15:27:25.672893: W external/local_xla/xla/service/gpu/llvm_gpu_backend/nvptx_backend.cc:110] libdevice is required by this HLO module but was not found at ./libdevice.10.bc
+2026-02-09 15:27:25.675088: F external/local_xla/xla/service/gpu/autotuning/gemm_fusion_autotuner.cc:987] Non-OK-status: executable.status()
+Status: INTERNAL: libdevice not found at ./libdevice.10.bc - Failure occured when compiling fusion gemm_fusion_dot.54 with config 'reference (cublas)'
+Fused HLO computation:
+%gemm_fusion_dot.54_computation (parameter_0: f32[64,500,513], parameter_1: f32[513,128]) -> f32[32000,128] {
+  %parameter_0 = f32[64,500,513]{2,1,0} parameter(0)
+  %sqrt.5 = f32[64,500,513]{2,1,0} sqrt(%parameter_0), metadata={op_name="XlaCallModule/jit(infer_fn)/MultiHeadClassifier/embedding_model/frontend/sqrt" source_file="gdm/sustainability/perch/models/frontend.py" source_line=244}
+  %bitcast.2210 = f32[32000,513]{1,0} bitcast(%sqrt.5), metadata={op_name="XlaCallModule/jit(infer_fn)/MultiHeadClassifier/embedding_model/frontend/sqrt" source_file="gdm/sustainability/perch/models/frontend.py" source_line=244}
+  %parameter_1 = f32[513,128]{1,0} parameter(1)
+  ROOT %dot.56 = f32[32000,128]{1,0} dot(%bitcast.2210, %parameter_1), lhs_contracting_dims={1}, rhs_contracting_dims={0}, metadata={op_name="XlaCallModule/jit(infer_fn)/MultiHeadClassifier/embedding_model/frontend/dot_general" source_file="gdm/sustainability/perch/models/frontend.py" source_line=258}
+}
+INFO:    Terminating squashfuse_ll after timeout
+INFO:    Timeouts can be caused by a running background process
+/tmp/slurmd/job5843762/slurm_script: line 22: 322603 Aborted                 (core dumped) apptainer exec --nv /cephyr/users/sheilaho/Alvis/perch.sif python -u Perch2_shallow_classifier.py

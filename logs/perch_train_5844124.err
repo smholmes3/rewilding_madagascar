@@ -1,0 +1,171 @@
+2026-02-09 16:23:13.547887: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-02-09 16:23:15.053454: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-02-09 16:23:20.518749: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+/usr/local/lib/python3.13/site-packages/tensorflow_hub/__init__.py:61: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1770650823.209247 3972374 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 43681 MB memory:  -> device: 0, name: NVIDIA A40, pci bus id: 0000:17:00.0, compute capability: 8.6
+/usr/local/lib/python3.13/site-packages/opensoundscape/ml/cnn.py:599: UserWarning: 
+                    This architecture is not listed in opensoundscape.ml.cnn_architectures.ARCH_DICT.
+                    It will not be available for loading after saving the model with .save() (unless using pickle=True). 
+                    To make it re-loadable, define a function that generates the architecture from arguments: (n_classes, n_channels) 
+                    then use opensoundscape.ml.cnn_architectures.register_architecture() to register the generating function.
+
+                    The function can also set the returned object's .constructor_name to the registered string key in ARCH_DICT
+                    to avoid this warning and ensure it is reloaded correctly by opensoundscape.ml.load_model().
+
+                    See opensoundscape.ml.cnn_architectures module for examples of constructor functions
+                    
+  warnings.warn(
+/usr/local/lib/python3.13/site-packages/opensoundscape/ml/cnn.py:623: UserWarning: Failed to detect expected # input channels of this architecture.Make sure your architecture expects the number of channels equal to `channels` argument 1). Pytorch architectures generally expect 3 channels by default.
+  warnings.warn(
+  0%|          | 0/5 [00:00<?, ?it/s]/usr/local/lib/python3.13/multiprocessing/popen_fork.py:67: DeprecationWarning: This process (pid=3972374) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+2026-02-09 16:27:10.150563: I external/local_xla/xla/service/service.cc:163] XLA service 0x1512cc06dc20 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2026-02-09 16:27:10.150593: I external/local_xla/xla/service/service.cc:171]   StreamExecutor device (0): NVIDIA A40, Compute Capability 8.6
+2026-02-09 16:27:10.645876: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2026-02-09 16:27:10.769891: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:473] Loaded cuDNN version 91002
+2026-02-09 16:27:14.300418: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:27:14.469252: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:27:17.255178: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:27:17.692907: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:27:20.546281: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:27:20.682542: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:27:20.942171: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:27:21.078729: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:27:21.453085: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:27:21.598633: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:27:22.020722: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:27:22.161910: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:27:22.805651: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:27:22.946894: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:27:23.729860: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:27:23.888472: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:27:25.982001: W external/local_xla/xla/service/gpu/llvm_gpu_backend/default/nvptx_libdevice_path.cc:41] Can't find libdevice directory ${CUDA_DIR}/nvvm/libdevice. This may result in compilation or runtime failures, if the program we try to run uses routines from libdevice.
+Searched for CUDA in the following directories:
+  ./cuda_sdk_lib
+  Perch2_shallow_classifier.py.runfiles/cuda_nvcc
+  Perch2_shallow_classifier.py.runfiles/cuda_nvdisasm
+  Perch2_shallow_classifier.py.runfiles/nvidia_nvshmem
+  Perch2_/cuda_nvcc
+  Perch2_/cuda_nvdisasm
+  Perch2_/nvidia_nvshmem
+  
+  /usr/local/cuda
+  /opt/cuda
+  /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../nvidia/cuda_nvcc
+  /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../nvidia/cuda_nvcc
+  /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../cuda
+  /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../..
+  /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../..
+  .
+You can choose the search directory by setting xla_gpu_cuda_data_dir in HloModule's DebugOptions.  For most apps, setting the environment variable XLA_FLAGS=--xla_gpu_cuda_data_dir=/path/to/cuda will work.
+2026-02-09 16:27:25.982041: W external/local_xla/xla/service/gpu/llvm_gpu_backend/nvptx_backend.cc:110] libdevice is required by this HLO module but was not found at ./libdevice.10.bc
+2026-02-09 16:27:25.997792: W tensorflow/core/framework/op_kernel.cc:1855] OP_REQUIRES failed at xla_ops.cc:590 : INTERNAL: libdevice not found at ./libdevice.10.bc
+2026-02-09 16:27:25.998237: I tensorflow/core/framework/local_rendezvous.cc:407] Local rendezvous is aborting with status: INTERNAL: libdevice not found at ./libdevice.10.bc
+	 [[{{node StatefulPartitionedCall}}]]
+  0%|          | 0/5 [00:20<?, ?it/s]
+Traceback (most recent call last):
+  File "/cephyr/users/sheilaho/Alvis/rewilding_madagascar/Perch2_shallow_classifier.py", line 93, in <module>
+    perch2_model.train(
+    ~~~~~~~~~~~~~~~~~~^
+      train_labels,
+      ^^^^^^^^^^^^^
+    ...<3 lines>...
+      embedding_num_workers=4
+      ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/bioacoustics_model_zoo/tensorflow_wrapper.py", line 205, in train
+    fit_classifier_on_embeddings(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        embedding_model=self,
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        device=device,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/opensoundscape/ml/shallow_classifier.py", line 256, in fit_classifier_on_embeddings
+    x_train, y_train = augmented_embed(
+                       ~~~~~~~~~~~~~~~^
+        embedding_model,
+        ^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        device=device,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/opensoundscape/ml/shallow_classifier.py", line 193, in augmented_embed
+    embedding_model.embed(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        sample_df,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        progress_bar=False,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/bioacoustics_model_zoo/perch_v2.py", line 461, in embed
+    outs = self.forward(
+        samples=samples,
+    ...<4 lines>...
+        **dataloader_kwargs,
+    )
+  File "/usr/local/lib/python3.13/site-packages/bioacoustics_model_zoo/perch_v2.py", line 379, in forward
+    results_dict = self(
+        dataloader=dataloader,
+    ...<2 lines>...
+        return_values=return_values,
+    )
+  File "/usr/local/lib/python3.13/site-packages/bioacoustics_model_zoo/perch_v2.py", line 293, in __call__
+    outs = self._batch_forward(
+        samples_batch,
+        return_dict=True,
+        apply_custom_classifier=("custom_classifier_logits" in _return_values),
+    )
+  File "/usr/local/lib/python3.13/site-packages/bioacoustics_model_zoo/perch_v2.py", line 212, in _batch_forward
+    model_outputs = self.tf_model.signatures["serving_default"](inputs=batch_data)
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/eager/polymorphic_function/concrete_function.py", line 1170, in __call__
+    return self._call_impl(args, kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/eager/polymorphic_function/concrete_function.py", line 1179, in _call_impl
+    return self._call_with_structured_signature(args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/eager/polymorphic_function/concrete_function.py", line 1263, in _call_with_structured_signature
+    return self._call_flat(
+           ~~~~~~~~~~~~~~~^
+        filtered_flat_args,
+        ^^^^^^^^^^^^^^^^^^^
+        captured_inputs=self.captured_inputs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/saved_model/load.py", line 146, in _call_flat
+    return super()._call_flat(args, captured_inputs)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/eager/polymorphic_function/concrete_function.py", line 1322, in _call_flat
+    return self._inference_function.call_preflattened(args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 216, in call_preflattened
+    flat_outputs = self.call_flat(*args)
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 251, in call_flat
+    outputs = self._bound_context.call_function(
+        self.name,
+        list(args),
+        len(self.function_type.flat_outputs),
+    )
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/eager/context.py", line 1688, in call_function
+    outputs = execute.execute(
+        name.decode("utf-8"),
+    ...<3 lines>...
+        ctx=self,
+    )
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/eager/execute.py", line 53, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+                                        inputs, attrs, num_outputs)
+tensorflow.python.framework.errors_impl.InternalError: Graph execution error:
+
+Detected at node StatefulPartitionedCall defined at (most recent call last):
+<stack traces unavailable>
+libdevice not found at ./libdevice.10.bc
+	 [[{{node StatefulPartitionedCall}}]] [Op:__inference_signature_wrapper_5524]

@@ -1,0 +1,159 @@
+/usr/local/lib/python3.13/site-packages/tensorflow_hub/__init__.py:61: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1770649532.516555 1078460 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 43681 MB memory:  -> device: 0, name: NVIDIA A40, pci bus id: 0000:ca:00.0, compute capability: 8.6
+/usr/local/lib/python3.13/site-packages/opensoundscape/ml/cnn.py:599: UserWarning: 
+                    This architecture is not listed in opensoundscape.ml.cnn_architectures.ARCH_DICT.
+                    It will not be available for loading after saving the model with .save() (unless using pickle=True). 
+                    To make it re-loadable, define a function that generates the architecture from arguments: (n_classes, n_channels) 
+                    then use opensoundscape.ml.cnn_architectures.register_architecture() to register the generating function.
+
+                    The function can also set the returned object's .constructor_name to the registered string key in ARCH_DICT
+                    to avoid this warning and ensure it is reloaded correctly by opensoundscape.ml.load_model().
+
+                    See opensoundscape.ml.cnn_architectures module for examples of constructor functions
+                    
+  warnings.warn(
+/usr/local/lib/python3.13/site-packages/opensoundscape/ml/cnn.py:623: UserWarning: Failed to detect expected # input channels of this architecture.Make sure your architecture expects the number of channels equal to `channels` argument 1). Pytorch architectures generally expect 3 channels by default.
+  warnings.warn(
+  0%|          | 0/5 [00:00<?, ?it/s]/usr/local/lib/python3.13/multiprocessing/popen_fork.py:67: DeprecationWarning: This process (pid=1078460) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+2026-02-09 16:05:43.405707: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:05:43.574562: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:05:46.336170: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:05:46.589015: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:05:49.336601: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:05:49.473170: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:05:49.731749: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:05:49.868347: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:05:50.242094: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:05:50.387317: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:05:50.809900: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:05:50.951101: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:05:51.591514: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:05:51.732402: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:05:52.518150: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:05:52.677491: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-02-09 16:05:53.473216: W tensorflow/core/framework/op_kernel.cc:1855] OP_REQUIRES failed at xla_ops.cc:590 : UNAVAILABLE: No PTX compilation provider is available. Neither ptxas/nvlink nor nvjtlink is available. As a fallback you can enable JIT compilation in the CUDA driver via the flag `--xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found`. Details: 
+ - Has NvJitLink support: LibNvJitLink is not supported (disabled during compilation).
+ - Has NvPtxCompiler support: LibNvPtxCompiler is not supported (disabled during compilation).
+ - Parallel compilation support is desired: 0
+ - ptxas_path: Couldn't find a suitable version of ptxas. The following locations were considered: ./cuda_sdk_lib/bin/ptxas, /usr/local/bin/ptxas, /usr/local/sbin/ptxas, /usr/local/bin/ptxas, /usr/sbin/ptxas, /usr/bin/ptxas, /sbin/ptxas, /bin/ptxas, Perch2_shallow_classifier.py.runfiles/cuda_nvcc/bin/ptxas, Perch2_shallow_classifier.py.runfiles/cuda_nvdisasm/bin/ptxas, Perch2_shallow_classifier.py.runfiles/nvidia_nvshmem/bin/ptxas, Perch2_/cuda_nvcc/bin/ptxas, Perch2_/cuda_nvdisasm/bin/ptxas, Perch2_/nvidia_nvshmem/bin/ptxas, bin/ptxas, /usr/local/cuda/bin/ptxas, /opt/cuda/bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../nvidia/cuda_nvcc/bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../nvidia/cuda_nvcc/bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../cuda/bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../../bin/ptxas
+ - ptxas_version: Couldn't find a suitable version of ptxas. The following locations were considered: ./cuda_sdk_lib/bin/ptxas, /usr/local/bin/ptxas, /usr/local/sbin/ptxas, /usr/local/bin/ptxas, /usr/sbin/ptxas, /usr/bin/ptxas, /sbin/ptxas, /bin/ptxas, Perch2_shallow_classifier.py.runfiles/cuda_nvcc/bin/ptxas, Perch2_shallow_classifier.py.runfiles/cuda_nvdisasm/bin/ptxas, Perch2_shallow_classifier.py.runfiles/nvidia_nvshmem/bin/ptxas, Perch2_/cuda_nvcc/bin/ptxas, Perch2_/cuda_nvdisasm/bin/ptxas, Perch2_/nvidia_nvshmem/bin/ptxas, bin/ptxas, /usr/local/cuda/bin/ptxas, /opt/cuda/bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../nvidia/cuda_nvcc/bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../nvidia/cuda_nvcc/bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../cuda/bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../../bin/ptxas
+ - nvlink_path: Couldn't find a suitable version of nvlink. The following locations were considered: ./cuda_sdk_lib/bin/nvlink, /usr/local/bin/nvlink, /usr/local/sbin/nvlink, /usr/local/bin/nvlink, /usr/sbin/nvlink, /usr/bin/nvlink, /sbin/nvlink, /bin/nvlink, Perch2_shallow_classifier.py.runfiles/cuda_nvcc/bin/nvlink, Perch2_shallow_classifier.py.runfiles/cuda_nvdisasm/bin/nvlink, Perch2_shallow_classifier.py.runfiles/nvidia_nvshmem/bin/nvlink, Perch2_/cuda_nvcc/bin/nvlink, Perch2_/cuda_nvdisasm/bin/nvlink, Perch2_/nvidia_nvshmem/bin/nvlink, bin/nvlink, /usr/local/cuda/bin/nvlink, /opt/cuda/bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../nvidia/cuda_nvcc/bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../nvidia/cuda_nvcc/bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../cuda/bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../../bin/nvlink
+ - nvlink_version: Couldn't find a suitable version of nvlink. The following locations were considered: ./cuda_sdk_lib/bin/nvlink, /usr/local/bin/nvlink, /usr/local/sbin/nvlink, /usr/local/bin/nvlink, /usr/sbin/nvlink, /usr/bin/nvlink, /sbin/nvlink, /bin/nvlink, Perch2_shallow_classifier.py.runfiles/cuda_nvcc/bin/nvlink, Perch2_shallow_classifier.py.runfiles/cuda_nvdisasm/bin/nvlink, Perch2_shallow_classifier.py.runfiles/nvidia_nvshmem/bin/nvlink, Perch2_/cuda_nvcc/bin/nvlink, Perch2_/cuda_nvdisasm/bin/nvlink, Perch2_/nvidia_nvshmem/bin/nvlink, bin/nvlink, /usr/local/cuda/bin/nvlink, /opt/cuda/bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../nvidia/cuda_nvcc/bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../nvidia/cuda_nvcc/bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../cuda/bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../../bin/nvlink
+ - Driver compilation is enabled: 0
+
+  0%|          | 0/5 [00:18<?, ?it/s]
+Traceback (most recent call last):
+  File "/cephyr/users/sheilaho/Alvis/rewilding_madagascar/Perch2_shallow_classifier.py", line 93, in <module>
+    perch2_model.train(
+    ~~~~~~~~~~~~~~~~~~^
+      train_labels,
+      ^^^^^^^^^^^^^
+    ...<3 lines>...
+      embedding_num_workers=4
+      ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/bioacoustics_model_zoo/tensorflow_wrapper.py", line 205, in train
+    fit_classifier_on_embeddings(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        embedding_model=self,
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        device=device,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/opensoundscape/ml/shallow_classifier.py", line 256, in fit_classifier_on_embeddings
+    x_train, y_train = augmented_embed(
+                       ~~~~~~~~~~~~~~~^
+        embedding_model,
+        ^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        device=device,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/opensoundscape/ml/shallow_classifier.py", line 193, in augmented_embed
+    embedding_model.embed(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        sample_df,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        progress_bar=False,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/bioacoustics_model_zoo/perch_v2.py", line 461, in embed
+    outs = self.forward(
+        samples=samples,
+    ...<4 lines>...
+        **dataloader_kwargs,
+    )
+  File "/usr/local/lib/python3.13/site-packages/bioacoustics_model_zoo/perch_v2.py", line 379, in forward
+    results_dict = self(
+        dataloader=dataloader,
+    ...<2 lines>...
+        return_values=return_values,
+    )
+  File "/usr/local/lib/python3.13/site-packages/bioacoustics_model_zoo/perch_v2.py", line 293, in __call__
+    outs = self._batch_forward(
+        samples_batch,
+        return_dict=True,
+        apply_custom_classifier=("custom_classifier_logits" in _return_values),
+    )
+  File "/usr/local/lib/python3.13/site-packages/bioacoustics_model_zoo/perch_v2.py", line 212, in _batch_forward
+    model_outputs = self.tf_model.signatures["serving_default"](inputs=batch_data)
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/eager/polymorphic_function/concrete_function.py", line 1170, in __call__
+    return self._call_impl(args, kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/eager/polymorphic_function/concrete_function.py", line 1179, in _call_impl
+    return self._call_with_structured_signature(args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/eager/polymorphic_function/concrete_function.py", line 1263, in _call_with_structured_signature
+    return self._call_flat(
+           ~~~~~~~~~~~~~~~^
+        filtered_flat_args,
+        ^^^^^^^^^^^^^^^^^^^
+        captured_inputs=self.captured_inputs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/saved_model/load.py", line 146, in _call_flat
+    return super()._call_flat(args, captured_inputs)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/eager/polymorphic_function/concrete_function.py", line 1322, in _call_flat
+    return self._inference_function.call_preflattened(args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 216, in call_preflattened
+    flat_outputs = self.call_flat(*args)
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/eager/polymorphic_function/atomic_function.py", line 251, in call_flat
+    outputs = self._bound_context.call_function(
+        self.name,
+        list(args),
+        len(self.function_type.flat_outputs),
+    )
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/eager/context.py", line 1688, in call_function
+    outputs = execute.execute(
+        name.decode("utf-8"),
+    ...<3 lines>...
+        ctx=self,
+    )
+  File "/usr/local/lib/python3.13/site-packages/tensorflow/python/eager/execute.py", line 53, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+                                        inputs, attrs, num_outputs)
+tensorflow.python.framework.errors_impl.UnavailableError: Graph execution error:
+
+Detected at node StatefulPartitionedCall defined at (most recent call last):
+<stack traces unavailable>
+No PTX compilation provider is available. Neither ptxas/nvlink nor nvjtlink is available. As a fallback you can enable JIT compilation in the CUDA driver via the flag `--xla_gpu_unsafe_fallback_to_driver_on_ptxas_not_found`. Details: 
+ - Has NvJitLink support: LibNvJitLink is not supported (disabled during compilation).
+ - Has NvPtxCompiler support: LibNvPtxCompiler is not supported (disabled during compilation).
+ - Parallel compilation support is desired: 0
+ - ptxas_path: Couldn't find a suitable version of ptxas. The following locations were considered: ./cuda_sdk_lib/bin/ptxas, /usr/local/bin/ptxas, /usr/local/sbin/ptxas, /usr/local/bin/ptxas, /usr/sbin/ptxas, /usr/bin/ptxas, /sbin/ptxas, /bin/ptxas, Perch2_shallow_classifier.py.runfiles/cuda_nvcc/bin/ptxas, Perch2_shallow_classifier.py.runfiles/cuda_nvdisasm/bin/ptxas, Perch2_shallow_classifier.py.runfiles/nvidia_nvshmem/bin/ptxas, Perch2_/cuda_nvcc/bin/ptxas, Perch2_/cuda_nvdisasm/bin/ptxas, Perch2_/nvidia_nvshmem/bin/ptxas, bin/ptxas, /usr/local/cuda/bin/ptxas, /opt/cuda/bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../nvidia/cuda_nvcc/bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../nvidia/cuda_nvcc/bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../cuda/bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../../bin/ptxas
+ - ptxas_version: Couldn't find a suitable version of ptxas. The following locations were considered: ./cuda_sdk_lib/bin/ptxas, /usr/local/bin/ptxas, /usr/local/sbin/ptxas, /usr/local/bin/ptxas, /usr/sbin/ptxas, /usr/bin/ptxas, /sbin/ptxas, /bin/ptxas, Perch2_shallow_classifier.py.runfiles/cuda_nvcc/bin/ptxas, Perch2_shallow_classifier.py.runfiles/cuda_nvdisasm/bin/ptxas, Perch2_shallow_classifier.py.runfiles/nvidia_nvshmem/bin/ptxas, Perch2_/cuda_nvcc/bin/ptxas, Perch2_/cuda_nvdisasm/bin/ptxas, Perch2_/nvidia_nvshmem/bin/ptxas, bin/ptxas, /usr/local/cuda/bin/ptxas, /opt/cuda/bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../nvidia/cuda_nvcc/bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../nvidia/cuda_nvcc/bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../cuda/bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../bin/ptxas, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../../bin/ptxas
+ - nvlink_path: Couldn't find a suitable version of nvlink. The following locations were considered: ./cuda_sdk_lib/bin/nvlink, /usr/local/bin/nvlink, /usr/local/sbin/nvlink, /usr/local/bin/nvlink, /usr/sbin/nvlink, /usr/bin/nvlink, /sbin/nvlink, /bin/nvlink, Perch2_shallow_classifier.py.runfiles/cuda_nvcc/bin/nvlink, Perch2_shallow_classifier.py.runfiles/cuda_nvdisasm/bin/nvlink, Perch2_shallow_classifier.py.runfiles/nvidia_nvshmem/bin/nvlink, Perch2_/cuda_nvcc/bin/nvlink, Perch2_/cuda_nvdisasm/bin/nvlink, Perch2_/nvidia_nvshmem/bin/nvlink, bin/nvlink, /usr/local/cuda/bin/nvlink, /opt/cuda/bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../nvidia/cuda_nvcc/bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../nvidia/cuda_nvcc/bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../cuda/bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../../bin/nvlink
+ - nvlink_version: Couldn't find a suitable version of nvlink. The following locations were considered: ./cuda_sdk_lib/bin/nvlink, /usr/local/bin/nvlink, /usr/local/sbin/nvlink, /usr/local/bin/nvlink, /usr/sbin/nvlink, /usr/bin/nvlink, /sbin/nvlink, /bin/nvlink, Perch2_shallow_classifier.py.runfiles/cuda_nvcc/bin/nvlink, Perch2_shallow_classifier.py.runfiles/cuda_nvdisasm/bin/nvlink, Perch2_shallow_classifier.py.runfiles/nvidia_nvshmem/bin/nvlink, Perch2_/cuda_nvcc/bin/nvlink, Perch2_/cuda_nvdisasm/bin/nvlink, Perch2_/nvidia_nvshmem/bin/nvlink, bin/nvlink, /usr/local/cuda/bin/nvlink, /opt/cuda/bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../nvidia/cuda_nvcc/bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../nvidia/cuda_nvcc/bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../cuda/bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../bin/nvlink, /usr/local/lib/python3.13/site-packages/tensorflow/python/platform/../../../../../../../bin/nvlink
+ - Driver compilation is enabled: 0
+
+	 [[{{node StatefulPartitionedCall}}]] [Op:__inference_signature_wrapper_5524]
