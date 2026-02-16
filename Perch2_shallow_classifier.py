@@ -108,7 +108,6 @@ torch.save(perch2_model.network.state_dict(), state_dict_path)
 print(f"Saved classifier weights to: {state_dict_path}")
 
 # save the custom Perch2 model to a file
-save_path.parent.mkdir(parents=True, exist_ok=True)
 perch2_model.save(save_path)
 print(f"Saved model to: {save_path}")
 # later, to reload your fine-tuned Perch2 from the saved object:
