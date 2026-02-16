@@ -8,11 +8,20 @@ import bioacoustics_model_zoo as bmz
 # -----------------
 # Config
 # -----------------
-filename = "perch2_shallow_classifier"
+run_name = "perch2_shallow_classifier"
 
 # Prefer absolute paths on HPC
 metadata_path = Path("/mimer/NOBACKUP/groups/rewilding_madagascar/data/metadata_mimer.csv")
-save_path = Path(f"/mimer/NOBACKUP/groups/rewilding_madagascar/models/{filename}")
+
+# One directory for EVERYTHING from this run
+out_dir = Path(f"/mimer/NOBACKUP/groups/rewilding_madagascar/models/{run_name}")
+out_dir.mkdir(parents=True, exist_ok=True)
+
+# File path for full model save (pickle to ensure reloadability)
+model_path = out_dir / f"{run_name}.pkl"
+
+# File path for lightweight weights
+state_dict_path = out_dir / "classifier_state_dict.pt"
 
 # -----------------
 # Load metadata
@@ -98,20 +107,20 @@ perch2_model.train(
   embedding_num_workers=4  
 )
 
-# Ensure the actual target directory exists
-save_path.mkdir(parents=True, exist_ok=True)
+# -----------------
+# Saving
+# -----------------
 
 #Save model as a lightweight option that is easier to reload in different environments
 import torch
-state_dict_path = save_path / "classifier_state_dict.pt"
 torch.save(perch2_model.network.state_dict(), state_dict_path)
 print(f"Saved classifier weights to: {state_dict_path}")
 
-# save the custom Perch2 model to a file
-perch2_model.save(save_path)
-print(f"Saved model to: {save_path}")
+# save the custom Perch2 model to a file (pickle=True recommended)
+perch2_model.save(model_path, pickle=True)
+print(f"Saved model to: {model_path}")
 # later, to reload your fine-tuned Perch2 from the saved object:
-# perch2_model = bmz.Perch2.load(save_path)
+# perch2_model = bmz.Perch2.load(model_path)
 
 
 # -----------------
@@ -156,6 +165,7 @@ def evaluate_on_val(
     # IMPORTANT: method signature may vary slightly by bmz version.
     # In your Perch notebook you used: model.predict(val_labels, batch_size=64)
     preds = model.predict(val_labels, batch_size=batch_size)
+    print("[eval] preds columns (first 10):", list(preds.columns)[:10])
 
     # Keep only the class columns (and in consistent order)
     preds = preds[class_list].copy()
@@ -233,7 +243,7 @@ preds, metrics = evaluate_on_val(
     model=perch2_model,
     val_labels=val_labels,
     class_list=class_list,
-    out_dir=save_path,   # saves under the model folder
-    filename=filename,
+    out_dir=out_dir,        # directory for histograms/results
+    filename=run_name,      # base name for files
     batch_size=64,
 )
