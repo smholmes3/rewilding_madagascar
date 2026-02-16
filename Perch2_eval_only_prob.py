@@ -36,9 +36,11 @@ class_list = [
 # Load model
 # -----------------
 import torch
-import bioacoustics_model_zoo.perch_v2
+from opensoundscape.ml.shallow_classifier import MLPClassifier
 
-torch.serialization.add_safe_globals([bioacoustics_model_zoo.perch_v2.Perch2])
+# Allowlist classes needed to unpickle your saved model (trusted file you created)
+torch.serialization.add_safe_globals([MLPClassifier])
+
 perch2_model = bmz.Perch2.load(model_path)
 print(f"Loaded model: {model_path}")
 
