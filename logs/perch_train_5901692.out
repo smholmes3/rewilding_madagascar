@@ -1,0 +1,38 @@
+This job can be monitored from: https://job.c3se.chalmers.se/alvis/5901692
+PWD in job: /cephyr/users/sheilaho/Alvis/rewilding_madagascar
+Host: alvis6-09
+Started: Mon Feb 16 11:03:05 CET 2026
+Embedding the training samples 5 times with stochastic augmentation
+Embedding the validation samples
+Fitting the classifier
+Epoch 100/1000, Loss: 0.0929373949766159, Val Loss: 0.18376024067401886
+val AU ROC: nan
+val MAP: 0.218
+Epoch 200/1000, Loss: 0.06364599615335464, Val Loss: 0.11020873486995697
+val AU ROC: nan
+val MAP: 0.307
+Epoch 300/1000, Loss: 0.0518973171710968, Val Loss: 0.08123333752155304
+val AU ROC: nan
+val MAP: 0.374
+Epoch 400/1000, Loss: 0.04523677006363869, Val Loss: 0.06616625934839249
+val AU ROC: nan
+val MAP: 0.430
+Epoch 500/1000, Loss: 0.040823403745889664, Val Loss: 0.057123877108097076
+val AU ROC: nan
+val MAP: 0.481
+Epoch 600/1000, Loss: 0.03762703761458397, Val Loss: 0.05119914561510086
+val AU ROC: nan
+val MAP: 0.521
+Epoch 700/1000, Loss: 0.03518080711364746, Val Loss: 0.047083307057619095
+val AU ROC: nan
+val MAP: 0.532
+Epoch 800/1000, Loss: 0.03323621675372124, Val Loss: 0.04410618916153908
+val AU ROC: nan
+val MAP: 0.546
+Epoch 900/1000, Loss: 0.03164459019899368, Val Loss: 0.041889678686857224
+val AU ROC: nan
+val MAP: 0.549
+Epoch 1000/1000, Loss: 0.03030988946557045, Val Loss: 0.040204647928476334
+val AU ROC: nan
+val MAP: 0.548
+Training complete

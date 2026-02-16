@@ -97,6 +97,10 @@ perch2_model.train(
   embedding_batch_size=64, 
   embedding_num_workers=4  
 )
+
+# Ensure the actual target directory exists
+save_path.mkdir(parents=True, exist_ok=True)
+
 #Save model as a lightweight option that is easier to reload in different environments
 import torch
 state_dict_path = save_path / "classifier_state_dict.pt"
