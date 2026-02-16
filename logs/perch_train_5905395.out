@@ -1,0 +1,45 @@
+This job can be monitored from: https://job.c3se.chalmers.se/alvis/5905395
+PWD in job: /cephyr/users/sheilaho/Alvis/rewilding_madagascar
+Host: alvis5-04
+Started: Mon Feb 16 13:40:36 CET 2026
+Embedding the training samples 5 times with stochastic augmentation
+Embedding the validation samples
+Fitting the classifier
+Epoch 100/1000, Loss: 0.09264000505208969, Val Loss: 0.18071013689041138
+val AU ROC: nan
+val MAP: 0.216
+Epoch 200/1000, Loss: 0.06348651647567749, Val Loss: 0.10817306488752365
+val AU ROC: nan
+val MAP: 0.306
+Epoch 300/1000, Loss: 0.051704246550798416, Val Loss: 0.07970508933067322
+val AU ROC: nan
+val MAP: 0.370
+Epoch 400/1000, Loss: 0.04501510038971901, Val Loss: 0.06492790579795837
+val AU ROC: nan
+val MAP: 0.433
+Epoch 500/1000, Loss: 0.04058992862701416, Val Loss: 0.05607036128640175
+val AU ROC: nan
+val MAP: 0.483
+Epoch 600/1000, Loss: 0.037393540143966675, Val Loss: 0.050269536674022675
+val AU ROC: nan
+val MAP: 0.520
+Epoch 700/1000, Loss: 0.03495252504944801, Val Loss: 0.04623882845044136
+val AU ROC: nan
+val MAP: 0.537
+Epoch 800/1000, Loss: 0.03301437199115753, Val Loss: 0.04332117736339569
+val AU ROC: nan
+val MAP: 0.547
+Epoch 900/1000, Loss: 0.03142866864800453, Val Loss: 0.041146501898765564
+val AU ROC: nan
+val MAP: 0.549
+Epoch 1000/1000, Loss: 0.030098918825387955, Val Loss: 0.039490707218647
+val AU ROC: nan
+val MAP: 0.551
+Training complete
+Saved classifier weights to: /mimer/NOBACKUP/groups/rewilding_madagascar/models/perch2_shallow_classifier/classifier_state_dict.pt
+Saved model to: /mimer/NOBACKUP/groups/rewilding_madagascar/models/perch2_shallow_classifier/perch2_shallow_classifier.pkl
+[eval] preds columns (first 10): ['Hypsipetes_madagascariensis', 'Copsychus_albospecularis', 'Coracopsis_nigra', 'Dicrurus_forficatus', 'Coua_caerulea', 'Zosterops_maderaspatanus', 'Eurystomus_glaucurus', 'Agapornis_canus', 'Saxicola_torquatus', 'Cyanolanius_madagascarinus']
+[eval] Wrote predictions: /mimer/NOBACKUP/groups/rewilding_madagascar/models/perch2_shallow_classifier/results/perch2_shallow_classifier_val_preds.csv
+[eval] Wrote histograms: /mimer/NOBACKUP/groups/rewilding_madagascar/models/perch2_shallow_classifier/histograms
+[eval] Wrote metrics: /mimer/NOBACKUP/groups/rewilding_madagascar/models/perch2_shallow_classifier/results/perch2_shallow_classifier_metrics_by_species.csv
+Finished: Mon Feb 16 13:57:50 CET 2026
