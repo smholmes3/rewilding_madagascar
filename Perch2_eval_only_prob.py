@@ -11,6 +11,8 @@ from sklearn.metrics import average_precision_score, roc_auc_score
 
 from opensoundscape import BoxedAnnotations
 import bioacoustics_model_zoo as bmz
+import torch
+import bioacoustics_model_zoo.perch_v2
 
 
 # -----------------
@@ -34,6 +36,7 @@ class_list = [
 # -----------------
 # Load model
 # -----------------
+torch.serialization.add_safe_globals([bioacoustics_model_zoo.perch_v2.Perch2])
 perch2_model = bmz.Perch2.load(model_path)
 print(f"Loaded model: {model_path}")
 
