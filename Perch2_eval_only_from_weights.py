@@ -102,7 +102,7 @@ def evaluate_on_val(model, val_labels, class_list, out_dir, filename, batch_size
     plt.rcParams["figure.figsize"] = [15, 5]
 
     for species in class_list:
-        pred_col = species
+        pred_col = species + "pred"
         if pred_col not in scores_valid_df.columns:
             print(f"[eval] WARNING: missing prediction column {pred_col}, skipping.")
             continue

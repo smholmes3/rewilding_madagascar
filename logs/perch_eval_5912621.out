@@ -1,0 +1,34 @@
+This job can be monitored from: https://job.c3se.chalmers.se/alvis/5912621
+PWD in job: /cephyr/users/sheilaho/Alvis/rewilding_madagascar
+Host: alvis5-07
+Started: Tue Feb 17 09:14:04 CET 2026
+Loaded classifier weights from: /mimer/NOBACKUP/groups/rewilding_madagascar/models/perch2_shallow_classifier/classifier_state_dict.pt
+[eval] preds columns (first 10): ['Hypsipetes_madagascariensis', 'Copsychus_albospecularis', 'Coracopsis_nigra', 'Dicrurus_forficatus', 'Coua_caerulea', 'Zosterops_maderaspatanus', 'Eurystomus_glaucurus', 'Agapornis_canus', 'Saxicola_torquatus', 'Cyanolanius_madagascarinus']
+[eval] Wrote prob predictions: /mimer/NOBACKUP/groups/rewilding_madagascar/models/perch2_shallow_classifier/results_prob/perch2_shallow_classifier_val_preds_prob.csv
+scores_valid_df shape: (1476, 38)
+Test species: Hypsipetes_madagascariensis
+Columns containing species string:
+['Hypsipetes_madagascariensis', 'Hypsipetes_madagascariensispred']
+Has label col (sp)? True
+Has pred col (sp+'pred')? True
+
+LABEL column stats (should look binary 0/1):
+Hypsipetes_madagascariensis
+False    994
+True     482
+Name: count, dtype: int64
+
+PRED column stats (should be continuous in (0,1)):
+count    1476.000000
+mean        0.347020
+std         0.393939
+min         0.000124
+25%         0.013885
+50%         0.102017
+75%         0.807357
+max         0.998153
+Name: Hypsipetes_madagascariensispred, dtype: float64
+Rounded nunique (6dp): 1467
+[eval] Wrote histograms: /mimer/NOBACKUP/groups/rewilding_madagascar/models/perch2_shallow_classifier/histograms_prob
+[eval] Wrote metrics: /mimer/NOBACKUP/groups/rewilding_madagascar/models/perch2_shallow_classifier/results_prob/perch2_shallow_classifier_metrics_by_species_prob.csv
+Finished: Tue Feb 17 09:16:51 CET 2026
