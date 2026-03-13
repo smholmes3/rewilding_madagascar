@@ -85,3 +85,9 @@ print(f"Clean files: {len(clean_unique):,}")
 print(f"Wrote: {bad_path}")
 print(f"Wrote: {clean_csv_path}")
 print(f"Wrote: {clean_txt_path}")
+
+
+#check files that were marked as bad
+bad = pd.read_csv("data/validation_outputs/bad_files_scheduleA.csv")
+print(bad["reason"].value_counts())
+print(bad.head())
