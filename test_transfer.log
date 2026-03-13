@@ -1,0 +1,2 @@
+Enter SFTP password: 
+2026/03/13 10:22:11 Failed to create file system for "mimer:/mimer/NOBACKUP/groups/rewilding_madagascar/scheduleA_test/": NewFs: couldn't connect SSH: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
