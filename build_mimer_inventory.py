@@ -16,37 +16,37 @@ for dirpath, _, filenames in os.walk(root):
 
         full_path = os.path.join(dirpath, f)
 
-        # -------- Extract metadata from path --------
-        # Adjust if needed depending on folder structure
-
+        # ---------- Extract site from path ----------
         parts = full_path.split(os.sep)
+        site = parts[-4]  # site/habitat/recorder/file
 
-        # Example assumptions:
-        # .../scheduleA_raw_audio_2026-03/<recorder_id>/.../<filename>
-
-        recorder_id = parts[-2]   # often correct, verify!
-
+        # ---------- Parse filename ----------
         filename = f
+        base = os.path.splitext(filename)[0]
 
-        # Optional: try to parse datetime from filename
-        # Modify depending on naming convention
-
-        datetime_start = ""
-        date = ""
-
-        # If filename contains timestamp like 20260315_083000.wav
         try:
-            base = os.path.splitext(filename)[0]
-            dt = datetime.strptime(base[:15], "%Y%m%d_%H%M%S")
+            left, date_str, time_str = base.split("_")
+            habitat_code, recorder_id = left.split("-")
+
+            dt = datetime.strptime(date_str + time_str, "%Y%m%d%H%M%S")
             datetime_start = dt.isoformat()
             date = dt.date().isoformat()
-        except:
-            pass
+
+        except Exception:
+            # Skip files that don't match expected pattern
+            print(f"Skipping unexpected filename: {filename}")
+            continue
+
+        # ---------- Unique recorder key ----------
+        recorder_key = f"{site}_{habitat_code}_{recorder_id}"
 
         rows.append([
             full_path,
             filename,
+            site,
+            habitat_code,
             recorder_id,
+            recorder_key,
             date,
             datetime_start
         ])
@@ -58,7 +58,10 @@ with open(out_csv, "w", newline="") as f:
     writer.writerow([
         "filepath",
         "filename",
+        "site",
+        "habitat_code",
         "recorder_id",
+        "recorder_key",
         "date",
         "datetime_start"
     ])
