@@ -25,16 +25,16 @@ for dirpath, _, filenames in os.walk(root):
         base = os.path.splitext(filename)[0]
 
         try:
-            left, date_str, time_str = base.split("_")
-            habitat_code, recorder_id = left.split("-")
+            left, date_str, time_str = base.rsplit("_", 2)
+            habitat_code, recorder_id = left.split("-", 1)
 
             dt = datetime.strptime(date_str + time_str, "%Y%m%d%H%M%S")
             datetime_start = dt.isoformat()
             date = dt.date().isoformat()
 
-        except Exception:
+        except Exception as e:
             # Skip files that don't match expected pattern
-            print(f"Skipping unexpected filename: {filename}")
+            print(f"Skipping unexpected filename: {filename} ({e})")
             continue
 
         # ---------- Unique recorder key ----------
