@@ -1,0 +1,9 @@
+This job can be monitored from: https://job.c3se.chalmers.se/alvis/6231199
+PWD in job: /cephyr/users/sheilaho/Alvis/rewilding_madagascar
+Host: alvis9-04
+Started: Fri Mar 27 10:01:46 CET 2026
+Array task ID: 2
+Recorder key: Analalava_NLF_A_NLF05
+Recorder: Analalava_NLF_A_NLF05
+Number of files: 1650
+Loaded classifier weights from: /mimer/NOBACKUP/groups/rewilding_madagascar/models/perch2_shallow_classifier/classifier_state_dict.pt
