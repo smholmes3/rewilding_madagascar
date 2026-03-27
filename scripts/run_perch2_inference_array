@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+IDX="${SLURM_ARRAY_TASK_ID}"
+RECORDER_KEY="$(sed -n "$((IDX + 1))p" metadata/recorders.txt)"
+
+if [[ -z "${RECORDER_KEY}" ]]; then
+  echo "No recorder_key found for array index ${IDX}"
+  exit 1
+fi
+
+echo "Array task ID: ${IDX}"
+echo "Recorder key: ${RECORDER_KEY}"
+
+apptainer exec --nv /cephyr/users/sheilaho/Alvis/perch2.sif \
+    python -u scripts/run_perch2_inference.py \
+      --inventory_csv metadata/file_inventory_mimer.csv \
+      --recorder_key "${RECORDER_KEY}" \
+      --out_dir_predictions results/predictions_by_recorder \
+      --out_dir_review results/review_top20_by_recorder
