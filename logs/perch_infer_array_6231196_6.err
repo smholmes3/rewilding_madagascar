@@ -100,4 +100,37 @@ I0000 00:00:1774602807.786807 2288814 gpu_device.cc:2020] Created device /job:lo
 2026-03-27 10:13:50.382089: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
 2026-03-27 10:13:50.539422: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
 I0000 00:00:1774602835.524667 2288951 device_compiler.h:196] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
-  7%|▋         | 1/14 [00:26<05:49, 26.87s/it] 14%|█▍        | 2/14 [00:29<02:29, 12.46s/it] 21%|██▏       | 3/14 [00:31<01:25,  7.78s/it] 29%|██▊       | 4/14 [00:33<00:56,  5.65s/it] 36%|███▌      | 5/14 [00:35<00:39,  4.39s/it] 43%|████▎     | 6/14 [00:38<00:29,  3.65s/it] 50%|█████     | 7/14 [00:40<00:22,  3.19s/it] 57%|█████▋    | 8/14 [00:42<00:17,  2.87s/it] 64%|██████▍   | 9/14 [00:44<00:13,  2.71s/it] 71%|███████▏  | 10/14 [00:47<00:10,  2.55s/it]
+  7%|▋         | 1/14 [00:26<05:49, 26.87s/it] 14%|█▍        | 2/14 [00:29<02:29, 12.46s/it] 21%|██▏       | 3/14 [00:31<01:25,  7.78s/it] 29%|██▊       | 4/14 [00:33<00:56,  5.65s/it] 36%|███▌      | 5/14 [00:35<00:39,  4.39s/it] 43%|████▎     | 6/14 [00:38<00:29,  3.65s/it] 50%|█████     | 7/14 [00:40<00:22,  3.19s/it] 57%|█████▋    | 8/14 [00:42<00:17,  2.87s/it] 64%|██████▍   | 9/14 [00:44<00:13,  2.71s/it] 71%|███████▏  | 10/14 [00:47<00:10,  2.55s/it] 79%|███████▊  | 11/14 [00:49<00:07,  2.49s/it] 86%|████████▌ | 12/14 [00:51<00:04,  2.41s/it] 93%|█████████▎| 13/14 [00:53<00:02,  2.35s/it]2026-03-27 10:14:25.373822: I external/local_xla/xla/service/gpu/autotuning/dot_search_space.cc:208] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs? Working around this by using the full hints set instead.
+2026-03-27 10:14:25.726428: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_29', 4 bytes spill stores, 4 bytes spill loads
+
+2026-03-27 10:14:25.822219: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_54', 56 bytes spill stores, 56 bytes spill loads
+
+2026-03-27 10:14:25.894398: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_54', 200 bytes spill stores, 200 bytes spill loads
+
+2026-03-27 10:14:26.398869: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_29', 36 bytes spill stores, 36 bytes spill loads
+
+2026-03-27 10:14:26.416937: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_29', 4 bytes spill stores, 4 bytes spill loads
+
+2026-03-27 10:14:26.608544: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_39', 4 bytes spill stores, 4 bytes spill loads
+
+2026-03-27 10:14:26.837944: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_39', 16 bytes spill stores, 16 bytes spill loads
+
+2026-03-27 10:14:26.914848: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_55', 80 bytes spill stores, 80 bytes spill loads
+
+2026-03-27 10:14:27.175479: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_55', 956 bytes spill stores, 956 bytes spill loads
+
+2026-03-27 10:14:27.515382: I external/local_xla/xla/stream_executor/cuda/subprocess_compilation.cc:346] ptxas warning : Registers are spilled to local memory in function 'gemm_fusion_dot_39', 1008 bytes spill stores, 880 bytes spill loads
+
+2026-03-27 10:14:31.587234: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-03-27 10:14:31.714643: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-03-27 10:14:31.913682: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-03-27 10:14:32.041046: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-03-27 10:14:32.298001: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-03-27 10:14:32.432455: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-03-27 10:14:32.769510: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-03-27 10:14:32.902743: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-03-27 10:14:33.503408: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-03-27 10:14:33.636881: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-03-27 10:14:34.330425: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2026-03-27 10:14:34.480128: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+100%|██████████| 14/14 [01:10<00:00,  6.56s/it]100%|██████████| 14/14 [01:10<00:00,  5.02s/it]
