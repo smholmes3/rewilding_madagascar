@@ -135,3 +135,4 @@ I0000 00:00:1774602174.753803 2286862 device_compiler.h:196] Compiled cluster us
 2026-03-27 10:15:19.132829: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
 2026-03-27 10:15:19.849057: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
 2026-03-27 10:15:19.999092: E external/local_xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+100%|██████████| 310/310 [12:56<00:00,  7.35s/it]100%|██████████| 310/310 [12:56<00:00,  2.50s/it]
