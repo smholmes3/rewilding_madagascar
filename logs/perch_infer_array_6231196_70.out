@@ -1,0 +1,14 @@
+This job can be monitored from: https://job.c3se.chalmers.se/alvis/6232908
+PWD in job: /cephyr/users/sheilaho/Alvis/rewilding_madagascar
+Host: alvis10-04
+Started: Fri Mar 27 14:39:03 CET 2026
+Array task ID: 70
+Recorder key: Ranomafana_ABV_A_ABV01
+Recorder: Ranomafana_ABV_A_ABV01
+Number of files: 1941
+Loaded classifier weights from: /mimer/NOBACKUP/groups/rewilding_madagascar/models/perch2_shallow_classifier/classifier_state_dict.pt
+Prediction index names: ['file', 'start_time', 'end_time']
+Prediction columns (first 10): ['Hypsipetes_madagascariensis', 'Copsychus_albospecularis', 'Coracopsis_nigra', 'Dicrurus_forficatus', 'Coua_caerulea', 'Zosterops_maderaspatanus', 'Eurystomus_glaucurus', 'Agapornis_canus', 'Saxicola_torquatus', 'Cyanolanius_madagascarinus']
+Wrote predictions: results/predictions_by_recorder/predictions_Ranomafana_ABV_A_ABV01.csv
+Wrote review table: results/review_top20_by_recorder/top20_review_Ranomafana_ABV_A_ABV01.csv
+Finished: Fri Mar 27 14:54:50 CET 2026

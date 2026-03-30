@@ -1,0 +1,14 @@
+This job can be monitored from: https://job.c3se.chalmers.se/alvis/6232665
+PWD in job: /cephyr/users/sheilaho/Alvis/rewilding_madagascar
+Host: alvis9-10
+Started: Fri Mar 27 13:30:32 CET 2026
+Array task ID: 57
+Recorder key: Marojejy_AGR_A_AGR02
+Recorder: Marojejy_AGR_A_AGR02
+Number of files: 2757
+Loaded classifier weights from: /mimer/NOBACKUP/groups/rewilding_madagascar/models/perch2_shallow_classifier/classifier_state_dict.pt
+Prediction index names: ['file', 'start_time', 'end_time']
+Prediction columns (first 10): ['Hypsipetes_madagascariensis', 'Copsychus_albospecularis', 'Coracopsis_nigra', 'Dicrurus_forficatus', 'Coua_caerulea', 'Zosterops_maderaspatanus', 'Eurystomus_glaucurus', 'Agapornis_canus', 'Saxicola_torquatus', 'Cyanolanius_madagascarinus']
+Wrote predictions: results/predictions_by_recorder/predictions_Marojejy_AGR_A_AGR02.csv
+Wrote review table: results/review_top20_by_recorder/top20_review_Marojejy_AGR_A_AGR02.csv
+Finished: Fri Mar 27 13:51:58 CET 2026

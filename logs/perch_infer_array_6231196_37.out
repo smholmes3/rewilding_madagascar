@@ -1,0 +1,14 @@
+This job can be monitored from: https://job.c3se.chalmers.se/alvis/6232113
+PWD in job: /cephyr/users/sheilaho/Alvis/rewilding_madagascar
+Host: alvis8-08
+Started: Fri Mar 27 11:48:26 CET 2026
+Array task ID: 37
+Recorder key: Ankafobe_KBF_A_KBF14
+Recorder: Ankafobe_KBF_A_KBF14
+Number of files: 1370
+Loaded classifier weights from: /mimer/NOBACKUP/groups/rewilding_madagascar/models/perch2_shallow_classifier/classifier_state_dict.pt
+Prediction index names: ['file', 'start_time', 'end_time']
+Prediction columns (first 10): ['Hypsipetes_madagascariensis', 'Copsychus_albospecularis', 'Coracopsis_nigra', 'Dicrurus_forficatus', 'Coua_caerulea', 'Zosterops_maderaspatanus', 'Eurystomus_glaucurus', 'Agapornis_canus', 'Saxicola_torquatus', 'Cyanolanius_madagascarinus']
+Wrote predictions: results/predictions_by_recorder/predictions_Ankafobe_KBF_A_KBF14.csv
+Wrote review table: results/review_top20_by_recorder/top20_review_Ankafobe_KBF_A_KBF14.csv
+Finished: Fri Mar 27 12:01:17 CET 2026
