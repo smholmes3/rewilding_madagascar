@@ -1,0 +1,10 @@
+Bootstrap: docker
+From: tensorflow/tensorflow:latest-gpu-jupyter
+
+%post
+    apt-get update
+    apt-get install -y libavcodec-dev libavformat-dev libswscale-dev
+    apt-get install -y libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev
+    apt-get install -y libgtk-3-dev
+    apt-get install -y libpng-dev libjpeg-dev libopenexr-dev libtiff-dev libwebp-dev
+    pip install "bioacoustics-model-zoo[perch]>=0.12.2" opensoundscape torch
