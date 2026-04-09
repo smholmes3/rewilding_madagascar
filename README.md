@@ -27,6 +27,13 @@ Filename format:
 ## Model
 The Perch2 shallow classifier was trained using the `scripts/Perch2_train_shallow_classifyer.py` script and evaluated using the `scripts/Perch2_eval_only_from_weights.py` script. I ran both as jobs, using the slurm structure seen in `slurm/eval_perch2`. 
 
+The final trained model weights are not currently included in this repository.
+At the time of inference, the weights file was stored separately on HPC storage as:
+
+/mimer/NOBACKUP/groups/rewilding_madagascar/models/<run_name>/classifier_state_dict.pt
+
+The code in this repository is public, but trained model weights will be shared separately at a later stage.
+
 ## Environment
 
 Inference was run using an Apptainer container built from `container/perch2.def`.
