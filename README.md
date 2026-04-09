@@ -25,14 +25,9 @@ Filename format:
 <habitat>_A-<recorder>_YYYYMMDD_HHMMSS.WAV
 
 ## Model
+The Perch2 shallow classifier was trained using the `scripts/Perch2_train_shallow_classifyer.py` script and evaluated using the `scripts/Perch2_eval_only_from_weights.py` script. I ran both as jobs, using the slurm structure seen in `slurm/eval_perch2`. 
 
-
-## How to run inference
-
-## Output format
-
-## Reproducibility
-### Container
+## Environment
 
 Inference was run using an Apptainer container built from `container/perch2.def`.
 
@@ -52,6 +47,15 @@ org.label-schema.usage.singularity.deffile.bootstrap: docker
 org.label-schema.usage.singularity.deffile.from: tensorflow/tensorflow:latest-gpu-jupyter
 org.opencontainers.image.ref.name: ubuntu
 org.opencontainers.image.version: 22.04
+
+Further details on packages are in the `environment/requirements.txt` file
+
+
+## How to run inference
+
+
+## Output format
+
 
 
 ## Funding
