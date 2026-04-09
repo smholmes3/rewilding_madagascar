@@ -4,16 +4,16 @@ This repository contains the environment structure, scripts, and metadata used t
 
 
 ## Repository structure
-metadata/ – file inventory and recorder list  
-scripts/ – training, evaluation, and inference scripts  
-slurm/ – job submission scripts  
-container/ – Apptainer definition  
-environment/ – package requirements  
-results/ – (not tracked) output files  
-data/ - (not tracked) input files
-archive/ - alternative models trained and experimental scripts
-logs/ - logs from training and inference runs
-tools/ - some additional scripts and notebooks for useful tasks like splitting data
+metadata/   - file inventory and recorder list  
+scripts/    - training, evaluation, and inference scripts  
+slurm/      - job submission scripts  
+container/  - Apptainer definition  
+environment/ - package requirements  
+results/    - (not tracked) output files  
+data/       - (not tracked) input files  
+archive/    - alternative models and experimental scripts  
+logs/       - logs from training and inference runs  
+tools/      - helper scripts and notebooks  
 
 
 ## Data availability
@@ -31,10 +31,12 @@ This should allow reproduction of the workflow once data access is available.
 
 ## Data structure
 Expected directory structure:
+```
 site/
   habitat_A/
     habitat_A-recorder/
       WAV files
+```
 
 Filename format:
 <habitat>_A-<recorder>_YYYYMMDD_HHMMSS.WAV
@@ -77,6 +79,8 @@ Further details on packages are in the `environment/requirements.txt` file
 
 ## How to run inference
 We ran a slurm array for inference, using the script `scripts/run_perch2_inference.py` in combination with `scripts/run_perch2_inference_array`. I used the slurm file `slurm/perch2_inference_array`. Each array task processes a single recorder, using `metadata/recorders.txt` to map SLURM_ARRAY_TASK_ID to recorder_key.
+
+Example command: sbatch slurm/perch2_inference_array
 
 ## Output format
 The output goes to a results folder, with two subfolders. The predictions_by_recorder folder contains the raw output csv files (one per recorder). Each file contains metadata columns followed by species probability columns. 
