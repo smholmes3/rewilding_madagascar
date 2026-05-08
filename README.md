@@ -17,7 +17,7 @@ tools/      - helper scripts and notebooks
 
 
 ## Data availability
-The raw audio data used in this project are currently stored on HPC infrastructure (Mimer/Alvis) and are not yet publicly available due to their large size.
+The raw audio data used in this project are currently stored on HPC infrastructure (Mimer/Alvis) and are not yet publicly available due to their large size. Metadata is backed up locally. 
 
 We are actively working toward making the dataset openly available. The intention is to release the data through a suitable long-term repository once project outputs are finalized.
 
@@ -41,6 +41,7 @@ site/
 Filename format:
 <habitat>_A-<recorder>_YYYYMMDD_HHMMSS.WAV
 
+5-second clip definitions are stored in cliptimes_5s.csv
 
 ## Model
 The Perch2 shallow classifier was trained using the `scripts/Perch2_train_shallow_classifier.py` script and evaluated using the `scripts/Perch2_eval_only_from_weights.py` script. Both training and evaluation were run as Slurm jobs, using the structure in `slurm/eval_perch2`. 
